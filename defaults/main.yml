@@ -10,6 +10,12 @@ gaming:
      - wine
      - dolphin-emu
      - zsh
+     - konversation
+     - flameshot
+     - git
+     - k3b
+     - vim
+
    git:
      - git@github.com:robbyrussell/oh-my-zsh.git
   ruby_gems:
