@@ -1,9 +1,10 @@
 Role Name
 =========
 
-This role installs applications that most gamers use.
+This role installs applications that most gamers use. This role for the moment concentrates on fedora but, it can be expanded for other distros.
 Requirements
 ------------
+
 
 Role Variables
 --------------
