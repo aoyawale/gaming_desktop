@@ -1,2 +1,8 @@
 ---
 # tasks file for gaming_desktop
+
+  - name: install all the gaming things
+    packages:
+      name: "{{ }}"
+      status: latest
+
