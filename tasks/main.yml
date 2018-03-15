@@ -5,4 +5,28 @@
     packages:
       name: "{{ }}"
       status: latest
+    tags: cool_apps
+
+  - name: Download oh my zsh
+    git:
+      repo: "{{ }}"
+      dest: "{{ ansible_user_dir }}"
+      version: master
+    tags: download_oh_my_zsh
+
+  - name: copy the .zshrc
+    copy:
+      src: "{{ ansible_user_dir }}"/oh-my-zsh/templates/zshrc.zsh-template
+      dest: "{{ ansible_user_dir }}"/.zshrc
+      remote_src: yes
+    tags: copy_zshrc
+
+  - name: change your default shell
+    shell: "chsh s /bin/zsh"
+    change_when: False
+    tags: change_shell
+
+
+
+
 
