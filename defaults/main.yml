@@ -9,8 +9,9 @@ gaming:
      - clementine
      - wine
      - dolphin-emu
-   pip:
-     - virtualenv
+     - zsh
+   git:
+     - git@github.com:robbyrussell/oh-my-zsh.git
   ruby_gems:
       - chef
       - rbenv
