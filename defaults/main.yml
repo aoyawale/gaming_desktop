@@ -1,12 +1,14 @@
 ---
 # defaults file for gaming_desktop
 
-gaming_apps:
-   rpms:
-     - python-pip
-     - vim-common
-     - ruby
-     - python3
+gaming:
+   apps:
+     - steam
+     - vlc
+     - obs-studio
+     - clementine
+     - wine
+     - dolphin-emu
    pip:
      - virtualenv
   ruby_gems:
